@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <video autoplay muted loop id="bg-video">
+      <source src="videos/video.mp4" type="video/mp4" />
+    </video>
+    <header>
+      <h1>Portfolio</h1>
+
+      <nav>
+        <button id="menu-button">☰</button>
+        <div id="navMenu">
+          <a href="#section1">Home</a>
+          <a href="#section2">About</a>
+          <a href="#section4">Projects</a>
+          <a href="#section3">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="section1">
+        <div class="section-left">
+          <p id="home-hello">Hello!</p>
+          <br />
+          <h1>
+            I'm Rupika Dangol <br />
+            a Computer Science Student
+          </h1>
+          <br />
+          <p id="home-location">Based in Kathmandu</p>
+        </div>
+
+        <div class="section-right">
+          <img src="images/profile.jpg" alt="profile-picture" id="img1" />
+        </div>
+      </section>
+
+      <section id="section2">
+        <h2>About</h2>
+
+        <div class="about-container">
+          <div class="section-left">
+            <img src="images/profile.jpg" alt="profile-picture" id="img2" />
+          </div>
+
+          <div class="section-right">
+            <h3>Full Name</h3>
+            <p>Rupika Dangol</p>
+
+            <h3>Date of Birth</h3>
+            <p>20 November 2006</p>
+
+            <h3>Education</h3>
+            <p>Herald College Kathmandu</p>
+            <p>2024-2027 Bsc (Hons) Computer Science</p>
+
+            <h3>Experience</h3>
+            <p>-</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="section4">
+        <h2>Projects</h2>
+        <p>project 1 — personal portfolio website</p>
+        <p>project 2 — task management app</p>
+        <p>project 3 — movie recommendation website</p>
+        <p>project 4 — weather dashboard</p>
+        <p>project 5 — game prototype</p>
+      </section>
+
+      <section id="section3">
+        <h2>Contact Me</h2>
+
+        <form action="#" method="POST">
+          <div>
+            <label for="name">Name:</label><br />
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              placeholder="Your Full Name"
+            />
+          </div>
+          <br />
+
+          <div>
+            <label for="email">Email:</label><br />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              placeholder="you@example.com"
+            />
+          </div>
+          <br />
+
+          <div>
+            <label for="message">Message:</label><br />
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              required
+              placeholder="What can I help you with?"
+            ></textarea>
+          </div>
+          <br />
+
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>&copy all rights reserved @2025</footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

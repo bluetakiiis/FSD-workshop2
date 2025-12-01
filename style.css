@@ -112,6 +112,14 @@ h3 {
   color: #90a1bf;
 }
 
+#menu-button {
+  display: none;
+}
+
+#navMenu {
+  display: block;
+}
+
 @media (max-width: 480px) {
   header {
     flex-direction: wrap;
@@ -136,11 +144,16 @@ h3 {
     margin-left: auto;
     margin-right: auto;
   }
+
+  #navMenu {
+    display: none;
+  }
+
+  #menu-button {
+    display: block; 
+  }
 }
 
-#navMenu {
-  display: none;
-}
 
 #bg-video {
   position: fixed;
@@ -151,3 +164,4 @@ h3 {
   object-fit: cover;
   z-index: -1;
 }
+
